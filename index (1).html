@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head><title>Profesyonel Web Sitesi Yapımı | Kenan Şahin</title>
+<meta name="description" content="Uygun fiyatlı, mobil uyumlu ve profesyonel web sitesi yapımı. WhatsApp ile hemen iletişime geçin.">
+
+<meta name="keywords" content="web sitesi yapımı, uygun fiyatlı web sitesi, mobil uyumlu site">
+
+<meta name="author" content="Kenan Şahin">
+    <meta charset="UTF-8">
+    <title>İlk Web Sitem</title>
+    <script>
+function formGonder(e) {
+    e.preventDefault();
+
+    let ad = document.getElementById("ad").value;
+    let tel = document.getElementById("tel").value;
+    let mesaj = document.getElementById("mesaj").value;
+
+    let url = "https://wa.me/905XXXXXXXXX?text=" +
+              "Ad: " + ad + "%0A" +
+              "Telefon: " + tel + "%0A" +
+              "Mesaj: " + mesaj;
+
+    window.open(url, "_blank");
+}
+</script>
+    <style>
+    .iletisim {
+    margin-top: 50px;
+}
+
+form {
+    max-width: 320px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+    height: 90px;
+}
+
+form button {
+    width: 100%;
+    background: #25D366;
+    color: #000;
+    font-weight: bold;
+    border-radius: 30px;
+}
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial;
+            text-align: center;
+            padding-top: 50px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        p {
+            font-size: 30px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    <p>.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}.phone {
+    position: fixed;
+    bottom: 120px;
+    right: 40px;
+    background-color: #007bff;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+/* AKILLI FONT AYARLARI */
+body {
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    color: #fff;
+    font-size: clamp(16px, 2.5vw, 20px);
+}
+
+h1 {
+    font-size: clamp(28px, 6vw, 42px);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: clamp(22px, 4.5vw, 32px);
+}
+
+p {
+    font-size: clamp(16px, 3vw, 22px);
+    line-height: 1.7;
+}
+
+button,
+.whatsapp,
+.phone {
+    font-size: clamp(14px, 3vw, 18px);
+}
+button,
+.whatsapp,
+.phone {
+    font-size: 18px;
+}
+.profil {
+    width: clamp(120px, 30vw, 180px);
+    height: clamp(120px, 30vw, 180px);
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+/* CAM EFEKTLİ PROFİL KUTUSU */
+.profil-kutu {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 350px;
+    margin: auto;
+    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+}
+
+/* SLIDER */
+.slider {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: auto;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    opacity: 0;
+    transition: opacity 1s, transform 0.5s;
+}
+
+/* AKTİF SLIDE */
+.slide.active {
+    opacity: 1;
+}
+
+/* HOVER EFEKT */
+.slider:hover .slide.active {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px rgba(255,255,255,0.4);
+}
+
+/* SOSYAL BUTONLAR */
+.sosyal {
+    margin-top: 20px;
+}
+
+.sosyal a {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 16px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+    background: #111;
+    border: 1px solid #444;
+    transition: 0.3s;
+}
+
+.sosyal a:hover {
+    background: #fff;
+    color: #000;
+}
+.hizmetler {
+    margin-top: 40px;
+}
+
+.kart {
+    background: rgba(255,255,255,0.08);
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 12px;
+    max-width: 280px;
+    border: 1px solid #333;
+}
+.fiyat-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 14px 24px;
+    background: #25D366;
+    color: #000;
+    font-weight: bold;
+    border-radius: 40px;
+    text-decoration: none;
+    box-shadow: 0 0 20px rgba(37,211,102,0.6);
+}
+.guven {
+    margin-top: 40px;
+    font-size: 18px;
+}
+</a>
+    </style>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+setInterval(() => {
+    slides[index].classList.remove("active");
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("active");
+}, 3000);
+.referans {
+    margin-top: 40px;
+}
+
+.ref-kart {
+    background: rgba(255,255,255,0.08);
+    margin: 10px auto;
+    padding: 14px;
+    max-width: 280px;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+</script>
+<body>
+      <p>
+  </p><img src="profil.jpg" alt="Profil Resmi" class="profil">
+  <h1>Kenan Şahin</h1>
+<p>Web Geliştirici</p>
+    <h1>MERHABA</h1>
+    <p>İşinizi internette büyütecek modern ve hızlı web siteleri yapıyorum.</p>
+
+  <div class="hizmetler">
+    <h2>Hizmetlerim</h2>
+
+    <div class="kart">🌐 Web Sitesi Yapımı</div>
+    <div class="kart">📱 Mobil Uyumlu Tasarım</div>
+    <div class="kart">⚡ Hızlı & Profesyonel</div>
+    <div class="guven">
+    <h2>Neden Ben?</h2>
+    <p>✔ Mobil uyumlu</p>
+    <p>✔ Hızlı teslim</p>
+    <p>✔ Uygun fiyat</p>
+    <p>✔ WhatsApp destek</p>
+   
+   <p></p><div class="iletisim">
+    <h2>İletişim Formu</h2>
+
+    <form onsubmit="formGonder(event)">
+        <input type="text" id="ad" placeholder="Adınız Soyadınız" required>
+        <input type="tel" id="tel" placeholder="Telefon Numaranız" required>
+        <textarea id="mesaj" placeholder="Ne istiyorsunuz?" required></textarea>
+        <button type="submit">Gönder</button>
+        <div class="referans">
+    <h2>Yapılan İşler</h2>
+
+    <div class="ref-kart">✔ Esnaf Tanıtım Sitesi</div>
+    <div class="ref-kart">✔ Kişisel Web Sitesi</div>
+    <div class="ref-kart">✔ Mobil Uyumlu Landing Page</div>
+</div>
+</div>
+<a href="https://wa.me/905352948834?text=Merhaba,%20fiyat%20bilgisi%20alabilir%20miyim?" 
+   class="fiyat-btn">
+   💰 Fiyat Al
+</a>
+</a><div class="harita">
+    <h2>Konum</h2>
+
+    <iframe 
+        src="https://www.google.com/maps?q=Bursa&output=embed"
+        width="100%" 
+        height="250" 
+        style="border:0; border-radius:15px;" 
+        loading="lazy">
+    </iframe>
+</div>
+</body>
+</html>
