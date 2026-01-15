@@ -26,6 +26,29 @@ function formGonder(e) {
 
     window.open(url, "_blank");
 }
+<form onsubmit="whatsappGonder(); return false;">
+  <input type="text" id="ad" placeholder="Adınız Soyadınız" required>
+  <input type="tel" id="tel" placeholder="Telefon Numaranız" required>
+  <textarea id="mesaj" placeholder="Ne istiyorsunuz?" required></textarea>
+
+  <button type="submit">Gönder</button>
+</form>
+
+<script>
+function whatsappGonder() {
+  var ad = document.getElementById("ad").value;
+  var tel = document.getElementById("tel").value;
+  var mesaj = document.getElementById("mesaj").value;
+
+  var whatsappMesaj =
+    "Ad Soyad: " + ad + "%0A" +
+    "Telefon: " + tel + "%0A" +
+    "Mesaj: " + mesaj;
+
+  var numara = "90XXXXXXXXXX"; // ← BURAYA KENDİ NUMARAN
+  window.open("https://wa.me/" + numara + "?text=" + whatsappMesaj, "_blank");
+}
+</script>
 </script>
     <style>
     .iletisim {
